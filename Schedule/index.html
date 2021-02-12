@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn1.vectorstock.com/i/1000x1000/66/20/scheduled-date-and-time-vector-10366620.jpg" type="image/jpg">
+
+    <title>My schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="container-check-error">
+        <div class="check-error">
+            <h2>Yêu cầu điền đầy đủ thông tin</h2>
+            <p>Nguyễn Văn Nam</p>
+        </div>
+    </div> -->
+    <div class="container-success">
+
+    </div>
+
+    <div class="container">
+    
+        <label for="name_schedule" class="label-name">Nhập tên lịch trình: </label>
+        <input type="text" id="name_schedule" class="input-name">
+        <small id="err-input-name" class="error-input-name">* Yêu cầu nhập đẩy đủ tên lịch trình</small>
+
+        <label for="time_input" class="label-time">Nhập ngày: </label>
+        <input type="datetime-local"  id="time_input" class="input-time">
+        <small id="err-input-time" class="error-input-time">* Yêu cầu nhập nhập đầy đủ ngày</small>
+        
+        <button id="button" class="btn">Add Schedule</button>
+    </div>
+    
+    <hr> 
+    <!-- tạo dòng kẻ ngang  -->
+    <h1 class="title">List works</h1>
+    <div class="container-table">
+        <table id="todoList" class="table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên lịch trình</th>
+                    <th>Thời gian</th>
+                    <th>Xóa</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr> 
+                    <td>
+                        <p>1</p>
+                    </td>
+                    <td>
+                        <p>Học java</p>
+                        <input type="text" name="" id="">
+                    </td>
+                    <td>
+                        <p>14/01/2000 15:01:22</p>
+                        <input type="datetime-local" name="" id="" >
+                    </td>
+                    <td>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr> 
+                    <td>2</td>
+                    <td>Học Java</td>
+                    <td>14/01/2000 15:01:22</td>
+                    <td><button class="btn-delete">Delete</button></td>
+                </tr>
+
+                <tr> 
+                    <td>3</td>
+                    <td>Học Java</td>
+                    <td>14/01/2000 15:01:22</td>
+                    <td><button class="btn-delete">Delete</button></td>
+                </tr>
+
+                <tr> 
+                    <td>4</td>
+                    <td>Học Java</td>
+                    <td>14/01/2000 15:01:22</td>
+                    <td><button class="btn-delete">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
